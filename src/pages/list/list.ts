@@ -1,7 +1,7 @@
 import { EventPage } from './../event/event';
 import { EventsServiceProvider } from './../../providers/events-service/events-service';
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-list',
@@ -17,7 +17,7 @@ export class ListPage {
 
   ionViewDidLoad(){
    this.Events.getEvents().subscribe(
-     data => { 
+     data => {
       this.data = data;
      },
      error => {

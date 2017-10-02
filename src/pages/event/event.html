@@ -7,13 +7,16 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>event</ion-title>
+    <ion-title>Evento</ion-title>
   </ion-navbar>
-
+  <ion-toolbar>
+    <ion-title>{{ data?.about }}</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <img [src]="data?.picture" >
-  <ion-title>{{ data?.about }}</ion-title>
-  <p>{{ data?.description }}</p>
+  <ion-card-content>
+    <p>{{ data?.description }}</p>
+  </ion-card-content>
 </ion-content>
